@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Rivera - Multimedia Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span>AR</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-gradient"></div>
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="hero-title">Alex Rivera</h1>
+              <div class="hero-subtitle">
+                <div class="divider"></div>
+                <p>Multimedia Designer</p>
+                <div class="divider"></div>
+              </div>
+              <p class="hero-description">
+                Crafting compelling visual narratives through innovative design,
+                cinematic video production, and immersive interactive
+                experiences that connect brands with their audiences.
+              </p>
+              <div class="hero-buttons">
+                <button
+                  class="btn btn-primary"
+                  onclick="scrollToSection('portfolio')"
+                >
+                  <span>View Portfolio</span>
+                  <i class="fas fa-arrow-down"></i>
+                </button>
+                <button
+                  class="btn btn-outline"
+                  onclick="scrollToSection('contact')"
+                >
+                  <i class="fas fa-envelope"></i>
+                  <span>Get In Touch</span>
+                </button>
+              </div>
+              <button class="btn btn-ghost">
+                <i class="fas fa-download"></i>
+                <span>Download CV</span>
+              </button>
+            </div>
+            <div class="hero-image">
+              <div class="image-container">
+                <img
+                  src="images/human.jpg"
+                  alt="Alex Rivera - Multimedia Designer"
+                />
+                <div class="status-indicator">
+                  <div class="status-dot"></div>
+                  <div class="status-ping"></div>
+                </div>
+                <div class="floating-element element-1"></div>
+                <div class="floating-element element-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-indicator" onclick="scrollToSection('about')">
+            <span>SCROLL TO EXPLORE</span>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-header">
+            <h2>About Me</h2>
+            <p>
+              Passionate multimedia designer with expertise in visual
+              storytelling
+            </p>
+          </div>
+          <div class="about-content">
+            <div class="about-image">
+              <div class="about-image-container">
+                <img
+                  src="images/human.jpg"
+                  alt="Alex Rivera at work"
+                />
+                <div class="about-decoration"></div>
+              </div>
+            </div>
+            <div class="about-text">
+              <p>
+                I'm a creative multimedia designer with over 5 years of
+                experience in crafting compelling visual narratives. My passion
+                lies in combining technical expertise with artistic vision to
+                create memorable experiences that resonate with audiences.
+              </p>
+              <p>
+                Currently pursuing advanced studies in multimedia design while
+                working on diverse creative projects. I believe in the power of
+                simplicity and the importance of every visual element serving a
+                meaningful purpose in the overall narrative.
+              </p>
+
+              <div class="skills-section">
+                <h3>Core Skills</h3>
+                <div class="skills-grid">
+                  <div class="skill-item">
+                    <i class="fas fa-palette"></i>
+                    <span>Graphic Design</span>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-video"></i>
+                    <span>Video Editing</span>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-cube"></i>
+                    <span>3D Animation</span>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-camera"></i>
+                    <span>Photography</span>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <span>UI/UX Design</span>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-film"></i>
+                    <span>Motion Graphics</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tools-section">
+                <h3>Tools & Software</h3>
+                <div class="tools-list">
+                  <span class="tool-badge">Adobe Photoshop</span>
+                  <span class="tool-badge">Illustrator</span>
+                  <span class="tool-badge">Premiere Pro</span>
+                  <span class="tool-badge">After Effects</span>
+                  <span class="tool-badge">Blender</span>
+                  <span class="tool-badge">Figma</span>
+                  <span class="tool-badge">Cinema 4D</span>
+                  <span class="tool-badge">DaVinci Resolve</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="section-header">
+            <h2>Portfolio</h2>
+            <p>A showcase of my creative work and projects</p>
+          </div>
+          <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="video">Video</button>
+            <button class="filter-btn" data-filter="animation">
+              Animation
+            </button>
+          </div>
+          <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="design">
+              <img
+                src="images/picture.jpg"
+                alt="Brand Identity Project"
+              />
+              <div class="portfolio-overlay">
+                <h3>Brand Identity</h3>
+                <p>Complete branding solution for tech startup</p>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="video">
+              <img
+                src="images/picture.jpg"
+                alt="Video Production"
+              />
+              <div class="portfolio-overlay">
+                <h3>Corporate Video</h3>
+                <p>Cinematic promotional video for luxury brand</p>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="animation">
+              <img
+                src="images/picture.jpg"
+                alt="3D Animation"
+              />
+              <div class="portfolio-overlay">
+                <h3>3D Animation</h3>
+                <p>Motion graphics for product launch</p>
+              </div>
+            </div>
+            <div class="portfolio-item" data-category="design">
+              <img
+                src="images/picture.jpg"
+                alt="Web Design"
+              />
+              <div class="portfolio-overlay">
+                <h3>Web Design</h3>
+                <p>Modern e-commerce website design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificates Section -->
+      <section id="certificates" class="certificates">
+        <div class="container">
+          <div class="section-header">
+            <h2>Certificates & Awards</h2>
+            <p>Recognition of my professional achievements</p>
+          </div>
+          <div class="certificates-grid">
+            <div class="certificate-item">
+              <div class="certificate-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <h3>Adobe Certified Expert</h3>
+              <p>Creative Suite Mastery</p>
+              <span class="certificate-year">2023</span>
+            </div>
+            <div class="certificate-item">
+              <div class="certificate-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <h3>Design Excellence Award</h3>
+              <p>International Design Competition</p>
+              <span class="certificate-year">2022</span>
+            </div>
+            <div class="certificate-item">
+              <div class="certificate-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+              <h3>Motion Graphics Specialist</h3>
+              <p>Advanced Animation Certification</p>
+              <span class="certificate-year">2021</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Let's collaborate on your next project</p>
+          </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span>Email</span>
+                  <p>alex.rivera@email.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <span>Phone</span>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <span>Location</span>
+                  <p>New York, NY</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <span>Response Time</span>
+                  <p>Within 24 hours</p>
+                </div>
+              </div>
+              <div class="social-links">
+                <a href="#" class="social-link"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-behance"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-dribbble"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1635959988000!5m2!1sen!2s"
+                width="100%"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
